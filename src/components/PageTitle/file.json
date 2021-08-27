@@ -1,0 +1,62 @@
+{
+  "myNavLink": [
+    {
+      "id": 0,
+      "value":"前端",
+      "address": ""
+    },
+    {
+      "id": 1,
+      "value": "后端",
+      "address": ""
+    },
+    {
+      "id": 2,
+      "value": "操作系统",
+      "address": ""
+    },
+    {
+      "id": 3,
+      "value": "fruits",
+      "address": ""
+    },
+    {
+      "id": 4,
+      "value": "nodejs",
+      "address": ""
+    }
+  ,
+    {
+      "id": 5,
+      "value": "多媒体",
+      "address": ""
+    }
+  ],
+  "myNavUser": [
+    {
+      "id": 0,
+      "value":"消息",
+      "address": ""
+    },
+    {
+      "id": 1,
+      "value": "动态",
+      "address": ""
+    },
+    {
+      "id": 2,
+      "value": "签到",
+      "address": ""
+    },
+    {
+      "id": 3,
+      "value": "登录",
+      "address": ""
+    },
+    {
+      "id": 4,
+      "value": "注册",
+      "address": ""
+    }
+  ]
+}

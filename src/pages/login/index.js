@@ -1,18 +1,42 @@
-import { Component } from 'react';
+import React from 'react';
+import stylus from './stylus.styl';
+import classNames from "classnames";
 
-export default class Login extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
+const ctx = classNames.bind(stylus);
 
+class Login extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state =  {
+            user:'',
+            pass:'',
+            loading:false
+        }
     }
-  }
-  render() {
-
-    return (
-      <div className="page">
-sfs
-      </div>
-    )
-  }
+    componentDidMount() {
+        console.log(this.props);
+    }
+    toLogin = ()=>{
+        const {user,pass} = this.state;
+        if(!user || !pass){
+            return
+        }
+    }
+    changeValue = (name,value)=>{
+        this.setState({
+            [name]:value
+        })
+    }
+    render() {
+        const {user,pass,loading} = this.state;
+        return (
+           <div className={ctx('page-login')}>
+                 <label htmlFor={"user"}> 账户</label>  <input  id="user" value={user}  onChange={(e)=>this.changeValue('user',e.target.value)}/>
+                 <label htmlFor={"pass"}> 密码</label>  <input id={"pass"} value={pass} onChange={(e)=>this.changeValue('pass',e.target.value)} />
+                  <button onClick={this.toLogin} disabled={loading}>登 录</button>
+           </div>
+        )
+    }
 }
+
+export default Login;
