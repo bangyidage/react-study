@@ -1,7 +1,7 @@
 import React from 'react';
 import stylus from './stylus.styl';
 import classNames from "classnames";
-
+import loading from "../../components/loading";
 const ctx = classNames.bind(stylus);
 
 class Login extends React.Component {
@@ -12,21 +12,25 @@ class Login extends React.Component {
             pass:'',
             loading:false
         }
+        this.rdiv = React.createRef();
     }
     componentDidMount() {
-        console.log(this.props);
     }
     toLogin = ()=>{
         const {user,pass} = this.state;
-        if(!user || !pass){
-            return
-        }
+        loading.open({
+            content:'loading'
+        });
+        setTimeout(function () {
+            loading.close();
+        },30000)
     }
     changeValue = (name,value)=>{
         this.setState({
             [name]:value
         })
     }
+
     render() {
         const {user,pass,loading} = this.state;
         return (

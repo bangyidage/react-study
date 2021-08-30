@@ -1,0 +1,35 @@
+.loading-mask-box-npsp
+	display flex
+	align-items center
+	justify-content center
+	position fixed
+	top 0
+	left 0
+	width 100vw
+	height 100vh
+	background rgba(121, 128, 121, 0.71)
+	& > .loading-la-dl
+		display flex
+		flex-direction column
+		align-items center
+		justify-content center
+		& > .loading-cir-la
+			width 4rem
+			height 4rem
+			border 3px solid #fff
+			border-radius 50%
+			border-top-color #b1111f
+			animation roateloading .6s infinite linear
+		& > .loading-cir-la-content
+			font-size 2rem
+			font-weight 400
+			color #fff
+		
+@keyframes roateloading{
+	from{
+		transform rotate(0);
+	}
+	to{
+		transform rotate(300deg);
+	}
+}
