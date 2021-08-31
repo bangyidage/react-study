@@ -1,10 +1,13 @@
 import React from 'react';
+import Page from "../components/Page";
 export default class MouseAndKeyDown extends React.Component{
     render() {
         return(
-            <div>
-                <h1>鼠标和键盘事件</h1>
-            </div>
+           <Page
+               isShowNav = {true}
+           >
+               <h3>鼠标键盘事件</h3>
+           </Page>
         )
     }
 }
