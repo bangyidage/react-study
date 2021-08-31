@@ -1,11 +1,17 @@
 .page-title
-	position fixed
-	top 0
 	width 100%
 	font-size 14px
 	font-weight 400
 	color #000
 	z-index 9999
+	@keyframes fly{
+		from{
+			top 40px
+		}
+		to{
+			top 0px
+		}
+	}
 	.nav
 		display flex
 		align-items center

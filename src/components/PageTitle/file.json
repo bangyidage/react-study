@@ -35,27 +35,27 @@
   "myNavUser": [
     {
       "id": 0,
-      "value":"消息",
+      "value":"color",
       "address": ""
     },
     {
       "id": 1,
-      "value": "动态",
+      "value": "file",
       "address": ""
     },
     {
       "id": 2,
-      "value": "签到",
+      "value": "event",
       "address": ""
     },
     {
       "id": 3,
-      "value": "登录",
+      "value": "eat",
       "address": ""
     },
     {
       "id": 4,
-      "value": "注册",
+      "value": "drink",
       "address": ""
     }
   ]

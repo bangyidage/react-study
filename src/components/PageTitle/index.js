@@ -19,11 +19,15 @@ export default class PageTitle extends React.Component{
             let t = document.documentElement.scrollTop || document.body.scrollTop;//滚动条滚动时距离顶部的位置
             let cth = document.documentElement.clientHeight || document.body.clientHeight;//页面可视区域高度
             let sth = document.documentElement.scrollHeight || document.body.scrollHeight;//滚动条总高度
-            if(t<2){
+            if(t<40){
                 that.r.style.background="transparent";
+                that.r.style.position = "static";
+                that.r.style.animation = "";
             }
             else{
-                that.r.style.background = "#fbf8f8"
+                that.r.style.background = "#fbf8f8";
+                that.r.style.position = "fixed";
+                that.r.style.animation = "fly 1s linear";
             }
         }
     }
@@ -35,8 +39,8 @@ export default class PageTitle extends React.Component{
     }
     render(){
         return(
-            <div className={ctx('page-title')} >
-                <nav className={ctx('nav')} ref={r=>this.r=r}>
+            <div className={ctx('page-title')}  ref={r=>this.r=r}>
+                <nav className={ctx('nav')}>
                     <BugOutlined  className={ctx('nav-icon')} />
                     <ul className={ctx('nav-link-ul')}>
                         {

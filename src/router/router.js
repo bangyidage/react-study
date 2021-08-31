@@ -15,16 +15,13 @@ const routerList = [
         path: "/component/page", name: "page", exact: true, component: lazy(() => import('../components/Page'))
     },
     {
+        path: "/event/mouseAndKeyDown", name: "mouseAndKeyDown", exact: true, component: lazy(() => import('../event/mouseAndKeyDown'))
+    },
+    {
         path: "/component/pageTitle",
         name: "Title",
         exact: true,
         component: lazy(() => import('../components/PageTitle'))
-    },
-    {
-        path: "/event/mouseAndKeyDown",
-        name: "键盘鼠标事件",
-        exact: true,
-        component: lazy(() => import('../event/mouseAndKeyDown'))
     },
     {
         path: "/frame/react", name: "react", exact: true, component: lazy(() => import('../frame/react'))
