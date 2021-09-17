@@ -1,18 +1,26 @@
-import React from 'react';
-import PageTitle from "../PageTitle";
-
+import React, {Fragment} from 'react';
+import Nav from '../Nav';
+import classNames from "classnames/bind";
+import stylus from './stylus.styl';
+import NotFound from "../../pages/notFound";
+const ctx = classNames.bind(stylus);
 export default class Page extends React.Component{
-    render() {
-        const {isShowNav,children} = this.props;
-        return (
-            <div className='page'>
+    render(){
+        const {isShowNav, children,className,isLoading} = this.props;
+        if(isLoading){
+            return <NotFound />
+        }
+        return(
+            <Fragment>
                 {
-                    isShowNav && <PageTitle />
+                    isShowNav && <Nav />
                 }
-                {
-                    children
-                }
-            </div>
+                <div className={`${className} ${ctx('page')}`} style={{paddingTop:isShowNav?"70px":""}}>
+                    {
+                        children
+                    }
+                </div>
+            </Fragment>
         )
     }
 }

@@ -1,61 +1,67 @@
 {
-  "myNavLink": [
+  "myNavLife": [
     {
       "id": 0,
-      "value":"前端",
+      "value":"生活",
       "address": ""
     },
     {
       "id": 1,
-      "value": "后端",
+      "value": "经历",
       "address": ""
     },
     {
       "id": 2,
-      "value": "操作系统",
+      "value": "饮食",
       "address": ""
     },
     {
       "id": 3,
-      "value": "fruits",
+      "value": "锻炼",
       "address": ""
     },
     {
       "id": 4,
-      "value": "nodejs",
+      "value": "军事",
       "address": ""
-    }
-  ,
-    {
+    },    {
       "id": 5,
-      "value": "多媒体",
-      "address": ""
-    }
-  ],
-  "myNavUser": [
-    {
-      "id": 0,
-      "value":"event",
+      "value":"生活",
       "address": ""
     },
     {
-      "id": 1,
-      "value": "color",
+      "id": 6,
+      "value": "经历",
       "address": ""
     },
     {
-      "id": 2,
-      "value": "java",
+      "id": 7,
+      "value": "饮食",
       "address": ""
     },
     {
-      "id": 3,
-      "value": "node",
+      "id": 8,
+      "value": "锻炼",
       "address": ""
     },
     {
-      "id": 4,
-      "value": "android",
+      "id": 9,
+      "value": "军事",
+      "address": ""
+    },
+    {
+      "id": 10,
+      "value": "饮食",
+      "address": ""
+    },
+    {
+      "id": 11,
+      "value": "锻炼",
+      "address": ""
+    },
+    {
+      "id": 12,
+      "value": "军事",
       "address": ""
     }
   ]
